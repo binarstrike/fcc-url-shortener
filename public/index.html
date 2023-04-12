@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <style>
+    .form {
+      height: 280px;
+      width: 300px;
+      background: #00ffff;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form>form {
+      padding: 30px;
+      display: block;
+    }
+
+    .form>form>button {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <form action="/api/shorturl" method="post">
+      <input type="text" name="url" placeholder="https://google.com">
+      <button type="submit">Shorturl</button>
+    </form>
+  </div>
+</body>
+
+</html>
